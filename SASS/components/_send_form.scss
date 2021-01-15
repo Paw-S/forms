@@ -1,0 +1,39 @@
+.form-send {
+  @extend .form__background;
+  width: 384px;
+  height: 496px;
+}
+
+.form-send__possition {
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    content: "";
+    top: 643px;
+    left: 128px;
+  }
+}
+
+.form-send__input--first {
+  margin-top: 22px;
+}
+.form-send__button {
+  @extend .button;
+  margin-top: 12px;
+  width: 339px;
+  height: 48px;
+}
+.form-send__comment {
+  margin-top: -3px;
+  width: 337px;
+  height: 230px;
+  margin-left: 23px;
+  border: 1px solid #c6c6c6;
+  resize: none;
+  padding-left: 15px;
+  &:focus {
+    outline: $-accent solid 3px;
+  }
+}

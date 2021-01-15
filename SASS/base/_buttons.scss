@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  background-color: $-accent;
+  box-shadow: 1px 1px 0 #ffffff, inset 1px 1px 1px rgba(255, 255, 255, 0.41);
+  border: 1px solid $-button-border;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.36) 0%,
+    rgba(255, 255, 255, 0.36) 100%
+  );
+  margin-left: 23px;
+
+  text-shadow: 1px 1px 0 #51850e;
+  color: $-secondary-text-color;
+  font-size: 18px;
+  font-weight: 500;
+}

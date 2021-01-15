@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../../img/background2.png),
+    url(../../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Titillium", Times, serif;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.form__title {
+  text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+  color: $-secondary-text-color;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+  text-align: center;
+}
+// .form__background__grey {
+//   width: 420px;
+//   height: 460px;
+//   background-color: #000000;
+//   //   opacity: 0.23;
+// }
+// .form__background {
+//   width: 382px;
+//   height: 421px;
+//   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.13);
+//   background-color: #f4f4f4;
+//   opacity: 1;
+// }
+.form__background {
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.13);
+  background-color: #f4f4f4;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+}
+
+li {
+  list-style: none;
+  margin-bottom: 21px;
+}
+
+input {
+  width: 257px;
+  height: 39px;
+  margin-left: 23px;
+  margin-right: 19px;
+  padding-left: 81px;
+}
+
+.form__lable {
+  position: relative;
+}
+.form__icon {
+  position: absolute;
+  content: "";
+  left: 44px;
+  top: 1px;
+  width: 28px;
+  height: 22px;
+  fill: $-primary-text-color;
+}
+input:focus ~ .form__icon {
+  fill: $-accent;
+}
+input:focus ~ .form__vertical-bar {
+  fill: $-accent;
+}
+.form__vertical-bar {
+  position: absolute;
+  content: "";
+  left: 90px;
+  bottom: -7px;
+  width: 2px;
+  height: 32px;
+  fill: $-primary-text-color;
+}
+
+input:focus {
+  outline: $-accent solid 3px;
+}
+
+.form__acceptance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form__checkbox--original {
+  display: none;
+}
+.form__checkbox {
+  display: inline-block;
+  width: 23px;
+  height: 24px;
+  border: 1px solid $-primary-text-color;
+  margin-left: 23px;
+  margin-right: 15px;
+  position: relative;
+}
+.form__checkbox::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: $-accent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.form__checkbox--original:checked + .form__checkbox::before {
+  opacity: 1;
+}

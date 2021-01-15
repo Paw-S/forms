@@ -1,0 +1,27 @@
+.form-reg {
+  @extend .form__background;
+  width: 382px;
+  height: 421px;
+}
+
+.form-reg__possition {
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 128px;
+  }
+}
+
+.form-reg__input--first {
+  margin-top: 22px;
+}
+.form-reg__button {
+  @extend .button;
+  margin-top: 12px;
+  width: 339px;
+  height: 48px;
+}

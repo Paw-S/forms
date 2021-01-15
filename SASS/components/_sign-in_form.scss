@@ -1,0 +1,33 @@
+.form-sign-in {
+  @extend .form__background;
+  width: 382px;
+  height: 218px;
+}
+
+.form-sign-in__possition {
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 627px;
+  }
+}
+
+.form-sign-in__input--first {
+  margin-top: 30px;
+}
+
+.form-sign-in__button {
+  @extend .button;
+  margin-right: 21px;
+  width: 139px;
+  height: 41px;
+}
+.form-sign-in__auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
