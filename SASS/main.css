@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: goldenrod;
   background-image: url(../../img/background2.png), url(../../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,14 +48,6 @@ li {
   margin-bottom: 21px;
 }
 
-input {
-  width: 257px;
-  height: 39px;
-  margin-left: 23px;
-  margin-right: 19px;
-  padding-left: 81px;
-}
-
 .form__lable {
   position: relative;
 }
@@ -69,14 +62,6 @@ input {
   fill: #afafaf;
 }
 
-input:focus ~ .form__icon {
-  fill: #93d02b;
-}
-
-input:focus ~ .form__vertical-bar {
-  fill: #93d02b;
-}
-
 .form__vertical-bar {
   position: absolute;
   content: "";
@@ -87,44 +72,10 @@ input:focus ~ .form__vertical-bar {
   fill: #afafaf;
 }
 
-input:focus {
-  outline: #93d02b solid 3px;
-}
-
 .form__acceptance {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.form__checkbox--original {
-  display: none;
-}
-
-.form__checkbox {
-  display: inline-block;
-  width: 23px;
-  height: 24px;
-  border: 1px solid #afafaf;
-  margin-left: 23px;
-  margin-right: 15px;
-  position: relative;
-}
-
-.form__checkbox::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 13px;
-  background-color: #93d02b;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-.form__checkbox--original:checked + .form__checkbox::before {
-  opacity: 1;
 }
 
 .form-reg {
@@ -334,5 +285,55 @@ input:focus {
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
+}
+
+.form__checkbox--original {
+  display: none;
+}
+
+.form__checkbox {
+  display: inline-block;
+  width: 23px;
+  height: 24px;
+  border: 1px solid #afafaf;
+  margin-left: 23px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.form__checkbox::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #93d02b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.form__checkbox--original:checked + .form__checkbox::before {
+  opacity: 1;
+}
+
+input {
+  width: 257px;
+  height: 39px;
+  margin-left: 23px;
+  margin-right: 19px;
+  padding-left: 81px;
+}
+
+input:focus ~ .form__icon {
+  fill: #93d02b;
+}
+
+input:focus ~ .form__vertical-bar {
+  fill: #93d02b;
+}
+
+input:focus {
+  outline: #93d02b solid 3px;
 }
 /*# sourceMappingURL=main.css.map */

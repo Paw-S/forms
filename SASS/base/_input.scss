@@ -1,0 +1,16 @@
+input {
+  width: 257px;
+  height: 39px;
+  margin-left: 23px;
+  margin-right: 19px;
+  padding-left: 81px;
+}
+input:focus ~ .form__icon {
+  fill: $-accent;
+}
+input:focus ~ .form__vertical-bar {
+  fill: $-accent;
+}
+input:focus {
+  outline: $-accent solid 3px;
+}
